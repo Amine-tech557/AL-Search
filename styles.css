@@ -1,0 +1,131 @@
+/* Global Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #1d1f21;
+  color: #f4f5f7;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Change from center to top */
+  min-height: 100vh; /* Allow body to stretch */
+  overflow-y: auto; /* Ensure scrolling is enabled */
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #4f8bf9; /* Blue color */
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 10px;
+}
+
+#searchInput {
+  width: 80%;
+  padding: 15px;
+  border-radius: 25px;
+  border: 1px solid #444;
+  background-color: #2c2f34;
+  color: #f4f5f7;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+#searchInput:focus {
+  outline: none;
+  border-color: #4f8bf9; /* Blue color */
+}
+
+#searchButton {
+  padding: 15px 20px;
+  background-color: #4f8bf9; /* Blue color */
+  border: none;
+  color: #1d1f21;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#searchButton:hover {
+  background-color: #3682c7; /* Darker blue color */
+}
+
+#searchButton img {
+  width: 20px;
+  height: 20px;
+}
+
+#results {
+  margin-top: 30px;
+}
+
+.result {
+  background-color: #2c2f34;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result a {
+  color: #4f8bf9; /* Blue color */
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+}
+
+.result a:hover {
+  text-decoration: underline;
+}
+
+.result p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+#pagination {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.pagination-button {
+  padding: 10px 15px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 5px;
+}
+
+.pagination-button:hover {
+  background-color: #3682c7; /* Darker blue color */
+}
+
+.pagination-button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
